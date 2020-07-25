@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         makeConstarints()
-        rl.text = "Колян пидор".uppercased()
+        rl.text = "Rainbow text".uppercased()
     }
     
     override func viewDidAppear(_ animated: Bool) {
