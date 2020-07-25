@@ -10,42 +10,36 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
-    private let rl = RainbowLabel()
+    private let rainbowLabel = RainbowLabel()
+    private var rainbowHeight: Constraint?
 
     override func loadView() {
         super.loadView()
         view.backgroundColor = .white
-        view.addSubview(rl)
+        view.addSubview(rainbowLabel)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         makeConstarints()
-        rl.text = "Rainbow text".uppercased()
+        rainbowLabel.text = "Rainbow very very beautiful teeeeeeext!!!!!!!".uppercased()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        rainbowHeight?.update(offset: rainbowLabel.textHeight)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        rl.startAnimate()
+        rainbowLabel.startAnimate()
     }
     
     private func makeConstarints() {
-        rl.snp.makeConstraints { (make) in
-            make.leading.trailing.equalToSuperview()
-            make.top.equalToSuperview().offset(50)
-            make.height.equalTo(100)
+        rainbowLabel.snp.makeConstraints { (make) in
+            make.leading.top.trailing.equalToSuperview().inset(50)
+            rainbowHeight = make.height.equalTo(0).constraint
         }
     }
-    
-    private func animate() {
-        rl.alpha = 0.0
-        UIView.animate(withDuration: 1, delay: 0, options: [.repeat], animations: {
-            self.rl.alpha = 1.0
-            self.rl.transform = .init(scaleX: 2, y: 2)
-        }, completion: { _ in
-            self.rl.transform = .identity
-        })
-    }
-
 }
 

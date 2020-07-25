@@ -9,21 +9,28 @@
 import UIKit
 
 class RainbowLabel: UIView {
-    private let rainbowLabel: UILabel = {
+    let rainbowLabel: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 17)
         label.text = ""
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     
-    private let rainbowView = UIView()
-    private let gradient = CAGradientLayer()
     var text: String? {
         didSet {
             rainbowLabel.text = text
         }
     }
+    
+    var textHeight: CGFloat {
+        let height = text?.height(withConstrainedWidth: self.bounds.width, font: rainbowLabel.font)
+        return height ?? 0
+    }
+    
+    private let rainbowView = UIView()
+    private let gradient = CAGradientLayer()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,7 +50,6 @@ class RainbowLabel: UIView {
         }, completion: { _ in
             self.rainbowView.transform = .identity
         })
-        
     }
     
     private func configureGradient() {
@@ -68,5 +74,14 @@ class RainbowLabel: UIView {
         rainbowLabel.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+    }
+}
+
+fileprivate extension String {
+    func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+        
+        return ceil(boundingBox.height)
     }
 }
