@@ -91,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F627727B24816BD2005C97AD /* RainbowTextTest */ = {
+		F627727B24816BD2005C97AD /* RainbowText */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F627729024816BD4005C97AD /* Build configuration list for PBXNativeTarget "RainbowTextTest" */;
+			buildConfigurationList = F627729024816BD4005C97AD /* Build configuration list for PBXNativeTarget "RainbowText" */;
 			buildPhases = (
 				42F1D56D024D6FD083E04BBE /* [CP] Check Pods Manifest.lock */,
 				F627727824816BD2005C97AD /* Sources */,
@@ -105,7 +105,7 @@
 			);
 			dependencies = (
 			);
-			name = RainbowTextTest;
+			name = RainbowText;
 			productName = RainbowTextTest;
 			productReference = F627727C24816BD2005C97AD /* RainbowText.app */;
 			productType = "com.apple.product-type.application";
@@ -125,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F627727724816BD2005C97AD /* Build configuration list for PBXProject "RainbowTextTest" */;
+			buildConfigurationList = F627727724816BD2005C97AD /* Build configuration list for PBXProject "RainbowText" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F627727B24816BD2005C97AD /* RainbowTextTest */,
+				F627727B24816BD2005C97AD /* RainbowText */,
 			);
 		};
 /* End PBXProject section */
@@ -377,7 +377,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F627727724816BD2005C97AD /* Build configuration list for PBXProject "RainbowTextTest" */ = {
+		F627727724816BD2005C97AD /* Build configuration list for PBXProject "RainbowText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F627728E24816BD4005C97AD /* Debug */,
@@ -386,7 +386,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F627729024816BD4005C97AD /* Build configuration list for PBXNativeTarget "RainbowTextTest" */ = {
+		F627729024816BD4005C97AD /* Build configuration list for PBXNativeTarget "RainbowText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F627729124816BD4005C97AD /* Debug */,
