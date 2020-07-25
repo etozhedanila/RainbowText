@@ -19,7 +19,7 @@
 		1FFEF301152ED5C60C039F6E /* Pods-RainbowTextTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowTextTest.release.xcconfig"; path = "Target Support Files/Pods-RainbowTextTest/Pods-RainbowTextTest.release.xcconfig"; sourceTree = "<group>"; };
 		2A34FFD212D1060BA60AAB5A /* Pods-RainbowTextTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowTextTest.debug.xcconfig"; path = "Target Support Files/Pods-RainbowTextTest/Pods-RainbowTextTest.debug.xcconfig"; sourceTree = "<group>"; };
 		CEDCAE7BCF832B2C3B29C972 /* Pods_RainbowTextTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainbowTextTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F627727C24816BD2005C97AD /* RainbowTextTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowTextTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F627727C24816BD2005C97AD /* RainbowText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F627727F24816BD2005C97AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F627728324816BD2005C97AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F627728824816BD4005C97AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		F627727324816BD2005C97AD = {
 			isa = PBXGroup;
 			children = (
-				F627727E24816BD2005C97AD /* RainbowTextTest */,
+				F627727E24816BD2005C97AD /* RainbowText */,
 				F627727D24816BD2005C97AD /* Products */,
 				04A62FF31FAB6AF93383764A /* Pods */,
 				D4C197B0FD6F5746964A3A53 /* Frameworks */,
@@ -70,12 +70,12 @@
 		F627727D24816BD2005C97AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F627727C24816BD2005C97AD /* RainbowTextTest.app */,
+				F627727C24816BD2005C97AD /* RainbowText.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F627727E24816BD2005C97AD /* RainbowTextTest */ = {
+		F627727E24816BD2005C97AD /* RainbowText */ = {
 			isa = PBXGroup;
 			children = (
 				F627727F24816BD2005C97AD /* AppDelegate.swift */,
@@ -85,7 +85,7 @@
 				F627728A24816BD4005C97AD /* LaunchScreen.storyboard */,
 				F627728D24816BD4005C97AD /* Info.plist */,
 			);
-			path = RainbowTextTest;
+			path = RainbowText;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,7 +107,7 @@
 			);
 			name = RainbowTextTest;
 			productName = RainbowTextTest;
-			productReference = F627727C24816BD2005C97AD /* RainbowTextTest.app */;
+			productReference = F627727C24816BD2005C97AD /* RainbowText.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -343,13 +343,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PAJM5Y54LW;
-				INFOPLIST_FILE = RainbowTextTest/Info.plist;
+				INFOPLIST_FILE = RainbowText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vitalySubbotin.RainbowTextTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitalySubbotin.RainbowText;
+				PRODUCT_NAME = RainbowText;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -362,13 +362,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PAJM5Y54LW;
-				INFOPLIST_FILE = RainbowTextTest/Info.plist;
+				INFOPLIST_FILE = RainbowText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vitalySubbotin.RainbowTextTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitalySubbotin.RainbowText;
+				PRODUCT_NAME = RainbowText;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
