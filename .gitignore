@@ -1,0 +1,7 @@
+*.xcuserstate
+*.xcbkptlist
+xcuserdata
+*.xcworkspace
+build/
+DerivedData/
+Pods/
