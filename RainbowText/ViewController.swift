@@ -18,23 +18,23 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubview(rainbowLabel)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         makeConstarints()
         rainbowLabel.text = "Rainbow very very beautiful teeeeeeext!!!!!!!".uppercased()
     }
-    
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         rainbowHeight?.update(offset: rainbowLabel.textHeight)
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         rainbowLabel.startAnimate()
     }
-    
+
     private func makeConstarints() {
         rainbowLabel.snp.makeConstraints { (make) in
             make.leading.top.trailing.equalToSuperview().inset(50)
@@ -42,4 +42,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
