@@ -9,6 +9,7 @@
 import UIKit
 
 class RainbowLabel: UIView {
+    
     let rainbowLabel: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 17)
@@ -42,14 +43,29 @@ class RainbowLabel: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        configureGradient()
+    }
 
     func startAnimate() {
-        configureGradient()
-        UIView.animate(withDuration: 1.0, delay: 0, options: [.repeat, .curveLinear], animations: {
-            self.rainbowView.transform = CGAffineTransform(translationX: -self.rainbowView.bounds.width, y: 0)
-        }, completion: { _ in
-            self.rainbowView.transform = .identity
-        })
+        UIView.animate(
+            withDuration: 1.0,
+            delay: 0,
+            options: [.repeat, .curveLinear],
+            animations: { [weak self] in
+                guard let self = self else { return }
+                self.rainbowView.transform = CGAffineTransform(translationX: -self.rainbowView.bounds.width, y: 0)
+            },
+            completion: { [weak self] _ in
+                guard let self = self else { return }
+                self.rainbowView.transform = .identity
+            })
+    }
+    
+    func stopAnimate() {
+        rainbowView.layer.removeAllAnimations()
     }
 
     private func configureGradient() {

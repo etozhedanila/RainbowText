@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
+    
     private let rainbowLabel = RainbowLabel()
     private var rainbowHeight: Constraint?
 
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         rainbowLabel.startAnimate()
     }
 
