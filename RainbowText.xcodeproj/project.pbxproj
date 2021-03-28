@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7118375B03B8B969373229F1 /* Pods_RainbowTextTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDCAE7BCF832B2C3B29C972 /* Pods_RainbowTextTest.framework */; };
+		17F9819C7B329C30E2E025CE /* Pods_RainbowText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E86E3E00A2D84DC36B8248 /* Pods_RainbowText.framework */; };
 		F627728024816BD2005C97AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627727F24816BD2005C97AD /* AppDelegate.swift */; };
 		F627728424816BD2005C97AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627728324816BD2005C97AD /* ViewController.swift */; };
 		F627728924816BD4005C97AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F627728824816BD4005C97AD /* Assets.xcassets */; };
@@ -16,9 +16,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120CF5E75005B65F380C8F6E /* Pods-RainbowText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowText.release.xcconfig"; path = "Target Support Files/Pods-RainbowText/Pods-RainbowText.release.xcconfig"; sourceTree = "<group>"; };
 		1FFEF301152ED5C60C039F6E /* Pods-RainbowTextTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowTextTest.release.xcconfig"; path = "Target Support Files/Pods-RainbowTextTest/Pods-RainbowTextTest.release.xcconfig"; sourceTree = "<group>"; };
 		2A34FFD212D1060BA60AAB5A /* Pods-RainbowTextTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowTextTest.debug.xcconfig"; path = "Target Support Files/Pods-RainbowTextTest/Pods-RainbowTextTest.debug.xcconfig"; sourceTree = "<group>"; };
-		CEDCAE7BCF832B2C3B29C972 /* Pods_RainbowTextTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainbowTextTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F05C62D9CC76E2A337467E1 /* Pods-RainbowText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainbowText.debug.xcconfig"; path = "Target Support Files/Pods-RainbowText/Pods-RainbowText.debug.xcconfig"; sourceTree = "<group>"; };
+		D0E86E3E00A2D84DC36B8248 /* Pods_RainbowText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainbowText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F627727C24816BD2005C97AD /* RainbowText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F627727F24816BD2005C97AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F627728324816BD2005C97AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7118375B03B8B969373229F1 /* Pods_RainbowTextTest.framework in Frameworks */,
+				17F9819C7B329C30E2E025CE /* Pods_RainbowText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +47,8 @@
 			children = (
 				2A34FFD212D1060BA60AAB5A /* Pods-RainbowTextTest.debug.xcconfig */,
 				1FFEF301152ED5C60C039F6E /* Pods-RainbowTextTest.release.xcconfig */,
+				3F05C62D9CC76E2A337467E1 /* Pods-RainbowText.debug.xcconfig */,
+				120CF5E75005B65F380C8F6E /* Pods-RainbowText.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -52,7 +56,7 @@
 		D4C197B0FD6F5746964A3A53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEDCAE7BCF832B2C3B29C972 /* Pods_RainbowTextTest.framework */,
+				D0E86E3E00A2D84DC36B8248 /* Pods_RainbowText.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,15 +166,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RainbowTextTest/Pods-RainbowTextTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RainbowText/Pods-RainbowText-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RainbowTextTest/Pods-RainbowTextTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RainbowText/Pods-RainbowText-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RainbowTextTest/Pods-RainbowTextTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RainbowText/Pods-RainbowText-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		42F1D56D024D6FD083E04BBE /* [CP] Check Pods Manifest.lock */ = {
@@ -188,7 +192,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RainbowTextTest-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RainbowText-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -338,7 +342,7 @@
 		};
 		F627729124816BD4005C97AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A34FFD212D1060BA60AAB5A /* Pods-RainbowTextTest.debug.xcconfig */;
+			baseConfigurationReference = 3F05C62D9CC76E2A337467E1 /* Pods-RainbowText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -357,7 +361,7 @@
 		};
 		F627729224816BD4005C97AD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FFEF301152ED5C60C039F6E /* Pods-RainbowTextTest.release.xcconfig */;
+			baseConfigurationReference = 120CF5E75005B65F380C8F6E /* Pods-RainbowText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
