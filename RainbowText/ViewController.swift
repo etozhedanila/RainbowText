@@ -12,7 +12,6 @@ import SnapKit
 class ViewController: UIViewController {
     
     private let rainbowLabel = RainbowLabel()
-    private var rainbowHeight: Constraint?
 
     override func loadView() {
         super.loadView()
@@ -26,11 +25,6 @@ class ViewController: UIViewController {
         rainbowLabel.text = "Rainbow very very beautiful teeeeeeext!!!!!!!".uppercased()
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        rainbowHeight?.update(offset: rainbowLabel.textHeight)
-    }
-
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -40,7 +34,6 @@ class ViewController: UIViewController {
     private func makeConstarints() {
         rainbowLabel.snp.makeConstraints { (make) in
             make.leading.top.trailing.equalToSuperview().inset(50)
-            rainbowHeight = make.height.equalTo(0).constraint
         }
     }
 }
