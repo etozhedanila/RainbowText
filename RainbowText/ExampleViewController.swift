@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ExampleViewController.swift
 //  RainbowTextTest
 //
 //  Created by Виталий Субботин on 29.05.2020.
@@ -9,9 +9,15 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class ExampleViewController: UIViewController {
     
-    private let rainbowLabel = RainbowLabel()
+    private let rainbowLabel: RainbowLabel = {
+        let label = RainbowLabel()
+        label.text = "Rainbow very very beautiful teeeeeeext!!!!!!!".uppercased()
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        return label
+    }()
 
     override func loadView() {
         super.loadView()
@@ -22,7 +28,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         makeConstarints()
-        rainbowLabel.text = "Rainbow very very beautiful teeeeeeext!!!!!!!".uppercased()
     }
 
     override func viewDidAppear(_ animated: Bool) {
